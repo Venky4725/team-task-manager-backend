@@ -24,7 +24,10 @@ app.add_middleware(
         "http://localhost:5174",
         "http://localhost:3000",
         "http://127.0.0.1:5174",
-        "http://127.0.0.1:3000"
+        "http://127.0.0.1:3000",
+        "https://*.vercel.app",  # Allow all Vercel deployments
+        "https://team-task-manager-two-livid.vercel.app",  # Your Vercel URL
+        "https://team-task-manager-backend-production-46b2.up.railway.app",  # Railway backend
     ],
     allow_credentials=True,
     allow_methods=["*"],
